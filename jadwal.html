@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Operasional - Kedai</title>
+    <style>
+        /* Mengatur latar belakang dan font secara umum */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('dino') no-repeat center center fixed;
+            background-size: cover;
+            /* Warna latar cadangan jika gambar tidak ada */
+            background-color: #e0e0e0; 
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #000;
+        }
+
+        /* Bagian Logo */
+        .logo-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Navigasi */
+        nav {
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        nav a {
+            color: #4b0082;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+
+        /* Garis pembatas tipis */
+        .divider {
+            width: 80%;
+            max-width: 400px;
+            border: 0;
+            border-top: 1px solid #aaa;
+            margin-bottom: 20px;
+        }
+
+        /* Judul Konten */
+        h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Tabel Jadwal */
+        table {
+            width: 100%;
+            max-width: 320px;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 12px 10px;
+            text-align: left;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        /* Catatan format waktu */
+        .note {
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo / Ikon Kedai (Menggunakan gambar logo cangkir kopi Java) -->
+    <div class="logo-container">
+        <!-- Ganti 'logo.png' dengan file gambar logo Anda -->
+        <img src="logo.png" alt="Logo Java">
+    </div>
+
+    <!-- Navigasi Menu -->
+    <nav>
+        <a href="beranda.html">Beranda</a> | <a href="jadwal.html">Jadwal Operasional</a>
+    </nav>
+
+    <hr class="divider">
+
+    <!-- Judul Halaman -->
+    <h2>Jam Operasional Kedai</h2>
+
+    <!-- Tabel Jam Operasional -->
+    <table>
+        <tr>
+            <th>Hari</th>
+            <th>Jam<br>Buka</th>
+        </tr>
+        <tr>
+            <td>Senin -<br>Jumat</td>
+            <td>09.00 -<br>22.00</td>
+        </tr>
+        <tr>
+            <td>Sabtu -<br>Minggu</td>
+            <td>10.00 -<br>24.00</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="note">
+                Format waktu dalam<br>WIB
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer / Pembuat -->
+    <footer>
+        Created by Dede Iyan Supardi @2026[span_0](start_span)[span_0](end_span)
+    </footer>
+
+</body>
+</html>
